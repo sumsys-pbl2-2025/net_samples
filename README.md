@@ -13,6 +13,12 @@
 ## 第4回 補足資料: 大きなファイルをバイナリモードで読み書きする方法について
     - readfile.py
 
+    - 参考ランダムなバイナリファイルを作る方法（例 1MBのランダムバイナリファイルを作る）
+    `head -c 1M /dev/urandom > random_file.bin`
+
+    - 参考ランダムなテキストファイルを作る方法（例 1kBのランダムテキストファイルを作る）
+    `tr -dc '0-9a-zA-Z' < /dev/urandom | head -c 1024 > random_text.txt
+
 ## 第5回 演習1: マルチスレッドを使ったサーバプログラム/UDPの通信/時間計測
     - tcp_server_thread.py
     - tcp_server_nothread.py
